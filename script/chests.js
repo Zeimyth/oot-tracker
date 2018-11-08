@@ -556,7 +556,7 @@ var dungeons = [
         y: "20.0%",
         chestlist: {
             'Zelda\'s Lullaby': { isAvailable: function () {
-                return true; }, },
+                return items.ChildTrade >= 2; }, },
             'Child Shooting Gallery': { isAvailable: function () {
                 return true; }, },
             'Bombchu Bowling 1': { isAvailable: function () {
@@ -696,9 +696,9 @@ var dungeons = [
             'Minuet of Forest': { isAvailable: function () {
                 return items.SariasSong || items.MinuetofForest; }, },
             'Deku Theater Skull Mask': { isAvailable: function () {
-                return true; }, },
+                return items.ChildTrade >= 5; }, },
             'Deku Theater Mask of Truth': { isAvailable: function () {
-                return (items.SariasSong && items.KokiriEmerald && items.GoronRuby && items.ZoraSapphire); }, },
+                return items.ChildTrade >= 8; }, },
         },
         isBeatable: function() {
             return this.canGetChest();
