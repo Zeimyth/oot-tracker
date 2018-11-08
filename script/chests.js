@@ -738,25 +738,25 @@ var dungeons = [
         y: "09.0%",
         chestlist: {
             'Heart Piece Above Dodongo Cavern': { isAvailable: function () {
-                return (items.Bombs || (items.Glove && items.Scale)); }, },
+                return items.Bombs || items.ChildTrade >= 4; }, }, // canBecomeAdult()
             'Outside Goron City Chest': { isAvailable: function () {
                 return items.Bombs || items.Hammer; }, },
             'Outside Goron City Grotto': { isAvailable: function () {
                 return items.SongofStorms; }, },
             'Bolero of Fire': { isAvailable: function () {
-                return (items.BoleroofFire || (items.HoverBoots && (items.Hammer || items.Bombs || items.Glove)) || (items.Hookshot && items.Glove)); }, },
+                return items.BoleroofFire || (items.HoverBoots && (items.Hammer || items.Bombs || items.Glove)) || (items.Hookshot && items.Glove); }, },
             'Crater Wall Heart Piece': { isAvailable: function () {
-                return (items.Bombs || items.Hammer || (items.BoleroofFire && (items.HoverBoots || items.Hookshot)) || items.Glove); }, },
+                return items.Bombs || items.Hammer || (items.BoleroofFire && (items.HoverBoots || items.Hookshot)) || items.Glove; }, },
             'Crater Magic Bean Heart Piece': { isAvailable: function () {
-                return ((items.Bombs || items.Scale) && items.BoleroofFire); }, },
+                return (items.Bombs || items.Scale) && items.BoleroofFire; }, },
             'Crater Grotto': { isAvailable: function () {
                 return items.Bombs || items.Hammer; }, },
             'Crater Fairy Fountain': { isAvailable: function () {
-                return (items.Hammer && items.ZeldasLullaby && (items.Glove || (items.BoleroofFire && items.Hookshot) || items.HoverBoots)); }, },
+                return items.Hammer && items.ZeldasLullaby && (items.Glove || (items.BoleroofFire && items.Hookshot) || items.HoverBoots); }, },
             'Summit Fairy Fountain': { isAvailable: function () {
-                return ((items.Bombs || items.Hammer) && items.ZeldasLullaby); }, },
+                return (items.Bombs || items.Hammer) && items.ZeldasLullaby; }, },
             'Biggoron Sword': { isAvailable: function () {
-                return (items.Bombs || items.Hammer || (items.BoleroofFire && (items.HoverBoots || items.Hookshot)) || items.Glove); }, },
+                return items.Bombs || items.Hammer || (items.BoleroofFire && (items.HoverBoots || items.Hookshot)) || items.Glove; }, },
         },
         isBeatable: function() {
             return this.canGetChest();
