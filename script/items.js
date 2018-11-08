@@ -6,6 +6,7 @@ var defaultItemGrid = [
         "Bombs",
         "Scale",
         "Glove",
+        "ChildTrade",
     ],
     [
         "KokiriSword",
@@ -86,6 +87,7 @@ var baseItems = {
     Light: false,
     Ocarina: 1,
     Bottle: 0,
+    ChildTrade: 0,
     Wallet: 0,
     Skulltula: 0,
 
@@ -135,6 +137,7 @@ var itemsMin = {
     Hookshot: 0,
     Ocarina: 1,
     Bottle: 0,
+    ChildTrade: 0,
     Glove: 0,
     Scale: 0,
     Magic: 0,
@@ -149,6 +152,7 @@ var itemsMax = {
     Hookshot: 2,
     Ocarina: 2,
     Bottle: 4,
+    ChildTrade: 8,
     Glove: 3,
     Scale: 2,
     Magic: 2,
